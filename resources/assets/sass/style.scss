@@ -1,0 +1,98 @@
+.last div {
+  width: 57px !important;
+  display: block;
+  position: relative; }
+.last div button {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0px;
+  border: none;
+  border-radius: 20px; }
+.last div button:first-child {
+  left: 7px;
+  background-image: url("../img/chat.png");
+  width: 16px;
+  height: 18px;
+  background-position: 100% 100%;
+  background-color: transparent; }
+.last div button:nth-child(2) {
+  left: 27px;
+  background-image: url("../img/checked.png");
+  width: 15px;
+  height: 15px;
+  background-position: 100% 100%;
+  background-color: transparent; }
+.last div button:nth-child(3) {
+  left: 47px;
+  background-image: url("../img/cancel.png");
+  width: 15px;
+  height: 15px;
+  background-position: 100% 100%;
+  background-color: transparent; }
+.last div button:nth-child(5) {
+  background-image: url("../img/return.png");
+  width: 15px;
+  height: 15px;
+  background-position: 100% 100%;
+  background-color: transparent; }
+
+table {
+  font-size: 12px;
+  color: #888;
+  border-collapse: collapse !important; }
+
+td, th {
+  padding: 10px !important;
+  border: 1px solid rgba(54, 59, 62, 0.03);
+  text-align: center !important; }
+
+.even {
+  background: rgba(158, 158, 158, 0.06); }
+
+input[type="search"] {
+  box-sizing: border-box;
+  width: 257px;
+  height: 35px; }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgba(65, 72, 76, 0.77); }
+
+input, button, select, textarea {
+  font-size: 13px;
+  line-height: inherit;
+  border: 1px solid rgba(128, 128, 128, 0.26);
+  color: rgba(96, 125, 139, 0.88);
+  border-radius: 3px; }
+
+table.dataTable thead th, table.dataTable thead td {
+  padding: 10px 18px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.09); }
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+  border-top: 1px solid rgba(17, 17, 17, 0.09); }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  color: white !important;
+  border: 1px solid #009ED0;
+  background-color: white;
+  background: #009ED0; }
+
+.box {
+  background: #FCFCFC;
+  overflow-x: auto; }
+.box::-webkit-scrollbar {
+  width: 12px;
+  height: 8px; }
+.box::-webkit-scrollbar-track {
+  background-color: #eaeaea; }
+.box::-webkit-scrollbar-thumb {
+  background-color: #009ED0; }
+
+.c {
+  margin-left: auto;
+  margin-right: auto; }

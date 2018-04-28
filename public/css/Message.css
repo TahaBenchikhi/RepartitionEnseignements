@@ -1,0 +1,38 @@
+.vue
+{
+	background-color: rgba(33, 150, 243, 0.14);
+
+}
+.timeholder
+{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+div.message_box
+{
+	position: relative;
+}
+table tr .pull-left
+{
+
+	margin-left: 2px;
+	padding: 5px;
+	font-size: 13px;
+	font-weight: bold;
+}
+div.scroll_message
+{
+	overflow: auto;
+	border:1px solid rgba(85, 85, 85, 0.15);
+	padding: 10px;
+}
+.expediteur-text,.sujet-text,.cc-text
+{
+	color: #007bff;
+}
+.message_content .btn
+{
+	position: relative;
+	top: 10px;
+}

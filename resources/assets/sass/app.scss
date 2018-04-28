@@ -1,0 +1,378 @@
+// Variables
+@import "variables";
+
+body {
+  font-size: 10pt;
+  background-color: $body-bg;
+  font-family: $font;
+  font-weight: normal;
+}
+
+.leftBar {
+  padding-top: 55px;
+  height: 100vh;
+  background: $Bdx_light_Blue;
+  overflow: auto;
+  position: fixed;
+}
+
+.navbar-default {
+  .navbar-nav {
+    font-weight: 500;
+    font-family: "Lato";
+    .dropdown {
+      .dropdown-menu {
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+        border-left: 1px $Bdx_light_Gray solid;
+        border-right: 1px $Bdx_light_Gray solid;
+        border-bottom: 1px $Bdx_light_Gray solid;
+        border-top: 1px $Bdx_light_Blue solid;
+      }
+    }
+  }
+}
+
+.topmenu {
+  margin-top: 10px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-header {
+  > a {
+    padding: 0;
+    > img {
+      height: $navbar-height;
+    }
+  }
+}
+
+.navbar-right {
+  margin-right: 0;
+}
+
+.active {
+  @extend .active;
+  font-weight: 600;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: $Bdx_light_Blue;
+  color: $Bdx_Blue;
+}
+
+.select2-selection--multiple, .select2-results__option {
+  min-height: 20px;
+  color: $Bdx_Blue;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-radius: 0;
+  border: 1px $Bdx_Gray solid;
+}
+
+.select2-results__option {
+  padding: 0;
+}
+
+.select2-container--default .select2-results__option {
+  padding-left: 5px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  color: $Bdx_light_Gray;
+  background-color: $Bdx_Gray !important;
+  display: none;
+}
+
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+  background-color: $Bdx_light_Gray !important;
+}
+
+.progress-bar-success {
+  background-color: $Bdx_light_Blue;
+  border: 1px $Bdx_light_Gray solid;
+}
+
+.box {
+  background-color: $Bdx_light_Gray;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 10pt;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.box_title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: $title_bg_color;
+  padding-top: 3px;
+  font-size: 18pt;
+  color: $title_color;
+}
+
+.mainContent {
+  overflow-y: auto;
+}
+
+.user_box_title {
+  margin-top: 7px;
+  background-color: $Bdx_Blue;
+  padding: 3px;
+  font-size: 12pt;
+  color: $Bdx_light_Gray;
+  border-radius: 3px;
+}
+
+.user_box {
+  background-color: $Bdx_light_Gray;
+  padding: 3px;
+  font-size: 9pt;
+  border-radius: 3px;
+  color: $Bdx_Gray;
+}
+
+.btn-default {
+  background-color: $Bdx_Blue;
+  color: $Bdx_white;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.leftBarLogin {
+  @extend .leftBar;
+  margin-top: 0;
+  height: 100vh;
+  background-image: url("../img/UBordeaux.png");
+  background-position: center;
+  border-right: 10px $Bdx_light_Blue solid;
+  background-size: cover;
+}
+
+.mobilebg {
+  @extend .leftBarLogin;
+  height: 60px;
+  border-bottom: 10px $Bdx_light_Blue solid;
+  padding: 0;
+  margin: 0;
+  background-image: none;
+}
+
+.messages {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 10pt;
+  margin-bottom: 5px;
+  padding-left: 0;
+  padding-right: 3px;
+}
+
+.message_box {
+  @extend .box;
+  background-color: $body-bg;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 1px;
+  z-index: 1;
+}
+
+.showmessage {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 10pt;
+  padding-right: 0;
+  padding-left: 0px;
+}
+
+.box_title_with_menu {
+  @extend .box_title;
+  margin-bottom: 0;
+  border-bottom: 1px white solid;
+}
+
+.menu_messages {
+  font-size: 10pt;
+  margin-top: 0;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  > ul > li {
+    list-style: none;
+    display: table-cell;
+    border-right: 2px $Bdx_light_Gray solid;
+    border-radius: 6px;
+
+    background-color: $Bdx_Blue;
+    color: $Bdx_light_Gray;
+  }
+  > ul > li:last-child {
+    border-right: 0px $Bdx_light_Gray solid;
+  }
+  > ul {
+    margin-bottom: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+  }
+}
+
+.menu_messages_xs {
+  @extend .menu_messages;
+  > ul > li {
+    display: block;
+    border-bottom: 1px $Bdx_white solid;
+    border-radius: 6px;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.scroll {
+  overflow-y: scroll;
+  width: 100%;
+  height: calc(100vh - 205px);
+}
+
+.scroll_message {
+  @extend .scroll;
+  height: calc(100vh - 370px);
+}
+
+.scroll_publication {
+  @extend .scroll_message;
+  height: calc(100vh - 305px);
+}
+
+.message_content {
+  width: 100%;
+  background-color: white;
+  border: 1px $Bdx_light_Blue solid;
+  margin-top: 10px;
+}
+
+.message_title {
+  font-size: 13pt;
+}
+
+.Date {
+  text-align: center;
+  line-height: 0.87;
+  .Day {
+    font-weight: bold;
+    font-size: 20pt;
+  }
+}
+
+.badge {
+  background: $Bdx_Blue;
+  display: inline-block;
+  border-radius: 12px;
+  color: white;
+  font-size: 9pt;
+  height: 17px;
+  padding: 2px 3px 2px 3px;
+  text-align: center;
+  min-width: 16px;
+}
+
+.grid .simple {
+  padding: 0 !important;
+}
+
+.grid {
+  clear: both;
+  margin-bottom: 20px;
+  padding: 0;
+  border-top: 10px $Bdx_light_Blue solid;
+  border-bottom: 5px $Bdx_light_Blue solid;
+}
+
+.title {
+  @extend .grid;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.grid.simple .grid-title.no-border {
+  border: 0 none;
+}
+
+.grid.simple .grid-title {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #ffffff;
+  border-color: #dddddd #dddddd -moz-use-text-color;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 1px 0;
+  color: #282323 !important;
+  margin-bottom: 0;
+  padding: 14px 15px 7px;
+}
+
+.grid-title {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.grid.simple .grid-body.no-border {
+  border: 0 none;
+}
+
+.grid.simple .grid-body {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  color: #6f7b8a;
+  padding: 26px;
+}
+
+.page-title h3 {
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  width: 83%;
+}
+
+h3 {
+  line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #505458;
+  font-family: "lato";
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.border-top {
+  padding: 5px;
+  background-color: $Bdx_light_Blue;
+}
+
+.img_login {
+  max-width: 40%;
+  height: auto;
+  min-width: 200px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
